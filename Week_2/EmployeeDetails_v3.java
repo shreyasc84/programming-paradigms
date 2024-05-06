@@ -1,4 +1,4 @@
-// Initializing class using reference variables 
+// Initializing the class using reference variables 
 
 class Employee{
     // Employee details
