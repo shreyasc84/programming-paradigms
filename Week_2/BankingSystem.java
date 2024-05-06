@@ -1,6 +1,7 @@
-// importing Scanner to take input
+// Importing Scanner to take user input
 import java.util.Scanner;
 
+// Class "account"
 class account{
     private int acc_no;
     private String name;
@@ -42,18 +43,24 @@ class account{
         balance();
     }
 }
+
+// Main class "BankingSystem"
 public class BankingSystem {
     public static void main(String[] args) {
+
         // To take user input
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
 
         // Creating an account object
-        account account = new account(123456, "John Doe", 1000);
+        account account = new account(170425, "Shreyas", 100000);
+
+        // Assigning required variables with its data type
         int choice;
         int deposite_amount;
         int withdraw_amount;
 
-        // Infinitely running the loop util the required conditions are met
+        // Infinitely running the loop util user chooses to exit
         while (true){
             System.out.println("\n1:Deposit");
             System.out.println("2:Withdraw");
@@ -89,8 +96,4 @@ public class BankingSystem {
 
         }
     }
-}
-
-        
-
-             
+}      
