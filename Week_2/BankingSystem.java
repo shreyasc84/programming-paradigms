@@ -1,6 +1,6 @@
 // importing Scanner to take input
 import java.util.Scanner;
-@SuppressWarnings("unused")
+
 class account{
     private int acc_no;
     private String name;
@@ -42,14 +42,55 @@ class account{
         balance();
     }
 }
-/* 
-public class BankingSystem{
+public class BankingSystem {
     public static void main(String[] args) {
-        @SuppressWarnings("resource")
+        // To take user input
         Scanner input = new Scanner(System.in);
-        int choice;
-        choice = input.nextInt();
-    }
 
+        // Creating an account object
+        account account = new account(123456, "John Doe", 1000);
+        int choice;
+        int deposite_amount;
+        int withdraw_amount;
+
+        // Infinitely running the loop util the required conditions are met
+        while (true){
+            System.out.println("\n1:Deposit");
+            System.out.println("2:Withdraw");
+            System.out.println("3:Check Balance");
+            System.out.println("4:Display Account Details");
+            System.out.println("5:Exit");
+            System.out.print("Enter your choice: ");
+            choice = input.nextInt();
+
+            if (choice == 1){
+                System.out.println("Enter the amount to deposite: ");
+                deposite_amount = input.nextInt();
+                account.deposite(deposite_amount);
+            }
+            else if (choice == 2){
+                System.out.println("Enter the amount to withdraw: ");
+                withdraw_amount = input.nextInt();
+                account.withdraw(withdraw_amount);
+            }
+            else if(choice == 3){
+                account.balance();
+            }
+            else if(choice == 4){
+                account.display();
+            }
+            else if(choice == 5){
+                System.out.println("Thank you! for using our bank service");
+                break;
+            }
+            else{
+                System.out.println("Invalid option! please reffer to the options available");
+            }
+
+        }
+    }
 }
-*/
+
+        
+
+             
