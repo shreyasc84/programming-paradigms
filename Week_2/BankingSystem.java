@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 // Class "account"
 class account{
-    private int acc_no;
-    private String name;
-    private int amount;
+    int acc_no;
+    String name;
+    int amount;
 
     // Constructor to initialize the account details
     public account(int acc_no, String name, int amount) {
