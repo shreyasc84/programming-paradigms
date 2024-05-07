@@ -2,9 +2,9 @@
 
 class Employee{
     // Employee details
-    private String ename;
-    private int eid;
-    private String department;
+    String ename;
+    int eid;
+    String department;
 
     // Method to initialize employee details
     public void insertEmployee(String n, int id, String dep){
