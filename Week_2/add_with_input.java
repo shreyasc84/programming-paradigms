@@ -1,7 +1,7 @@
 //adding two floating numbers by taking inputs
 import java.util.Scanner; //importing scanner for taking inputs
 public class add_with_input{
-    public static void main(String args[]){
+    public static void main(String[] args){
         @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the first number:");
